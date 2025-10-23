@@ -1,0 +1,14 @@
+{
+  "name": "ddos-protection-project",
+  "version": "1.0.0",
+  "description": "PKP-controlled state channel DDoS protection",
+  "main": "broker/index.js",
+  "scripts": {
+    "broker": "node broker/index.js",
+    "client": "node client-example/client.js"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "ws": "^8.13.0"
+  }
+}
