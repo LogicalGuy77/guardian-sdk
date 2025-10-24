@@ -5,7 +5,8 @@
   "main": "broker/index.js",
   "scripts": {
     "broker": "node broker/index.js",
-    "client": "node client-example/client.js"
+    "client-valid": "node client-example/client_valid.js",
+    "client-attack": "node client-example/client_flood_attack.js"
   },
   "dependencies": {
     "ethers": "^5.7.2",
