@@ -1,3 +1,5 @@
+### Decentralized DDoS Protection with PKP-Controlled State Channels
+
 <pre style="white-space: pre;">
 ┌─────────────────────────────────────────────────────────────┐
 │                    ATTACKER TRAFFIC                         │
