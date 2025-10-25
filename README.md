@@ -1,4 +1,4 @@
-### Decentralized DDoS Protection with PKP-Controlled State Channels
+## Decentralized DDoS Protection with PKP-Controlled State Channels
 
 <pre style="white-space: pre;">
 ┌─────────────────────────────────────────────────────────────┐
