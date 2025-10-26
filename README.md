@@ -1,5 +1,6 @@
 ## Decentralized DDoS Protection with PKP-Controlled State Channels
 
+### Pitch Deck: https://guardian-protocol-4scqwxi.gamma.site/
 <pre style="white-space: pre;">
 ┌─────────────────────────────────────────────────────────────┐
 │                    ATTACKER TRAFFIC                         │
