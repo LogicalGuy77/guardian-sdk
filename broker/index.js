@@ -1,5 +1,6 @@
 // File: broker/index.js
-const { WebSocketServer } = require('ws');
+import { WebSocketServer } from 'ws';
+import { detectRepeatedObject } from '../lit-actions/lit_guardian.js';
 
 const WSS_PORT = 8080;
 const PKP_GUARDIANS = ["pkp1", "pkp2", "pkp3", "pkp4"];
@@ -61,7 +62,10 @@ wss.on('connection', (ws, req) => {
       const approvals = decisions.filter(d => d.decision === "ALLOW");
       console.log(`[BROKER] PKP Consensus: ${approvals.length}/${PKP_GUARDIANS.length} approved.`);
 
-      if (approvals.length >= THRESHOLD) {
+      const rep = detectRepeatedObject(message , 4000);
+
+
+      if (approvals.length >= THRESHOLD && rep == false) {
         // --- Happy Path ---
         console.log("[BROKER] ✅ Processing message in state channel.");
         ws.send(JSON.stringify({
